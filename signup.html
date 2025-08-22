@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sign Up for HeartLift</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">HeartLift</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html" class="cta outline">Log In</a>
+    </nav>
+  </header>
+  <main>
+    <section class="signup-card">
+      <h2 class="signup-title">Sign up for HeartLift</h2>
+      <form class="signup-form" id="signupForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+        <div class="signup-check">
+          <input type="checkbox" id="terms" required>
+          <label for="terms" class="signup-check-label">
+            I agree to the Terms & Conditions and Privacy Policy
+          </label>
+        </div>
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+
+      <div class="signup-social">
+        <button class="social-btn">Sign up with SocialMediaCo</button>
+        <button class="social-btn">Sign up with FaceConnect</button>
+      </div>
+      <div class="signup-login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="#">Terms of Service</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+      © 2025 HeartLift. All rights reserved.
+    </div>
+  </footer>
+  <script src="signup.js"></script>
+</body>
+</html>

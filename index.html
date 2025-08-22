@@ -11,19 +11,20 @@
   <header>
     <div class="logo">HeartLift</div>
     <nav>
-      <a href="#">Daily Plan</a>
-      <a href="#">Mood Tracker</a>
-      <a href="#">AI Coach</a>
-      <a href="#">Community</a>
-      <a class="cta" href="#">Get Started</a>
-    </nav>
+  <a href="mood-tracker.html" id="mood-tracker">Pulse</a>
+  <a href="#" id="aiCoachNav">Lumo</a>
+  <a href="#">Whisper</a>
+  <a href="contact.html" id="contact">Contact</a>
+  <a class="cta" href="signup.html">Get Started</a>
+</nav>
+
   </header>
 
   <main>
     <section class="hero">
       <h1>Recover from Heartbreak with HeartLift</h1>
       <p>Your personalized healing journey, with daily plans, emotional support, and a caring community.</p>
-      <button class="cta-btn">Get Started</button>
+      <button class="cta-btn" href="#">Get Started</button>
     </section>
 
     <section class="section">
@@ -37,12 +38,18 @@
           <h3>Mood Tracking</h3>
           <p>Track your daily mood, see your progress, and celebrate small wins along the way.</p>
         </div>
+        <div class="support-cards">
+  <!-- ... other cards ... -->
+  <div class="card ai-coaching-card" id="aiCoachingCard">
+    <h3>AI Friend - Lumo</h3>
+    <p>Your digital coach—choose advice from best friend, tough love, or motivational vibes.</p>
+  </div>
+  <!-- ... remaining cards ... -->
+</div>
+
+        
         <div class="card">
-          <h3>AI Coaching</h3>
-          <p>Your digital coach—choose advice from best friend, tough love, or motivational vibes.</p>
-        </div>
-        <div class="card">
-          <h3>Community Support</h3>
+          <h3>Anonymous Community - Whisper</h3>
           <p>Connect with others going through similar journeys in a safe, anonymous space.</p>
         </div>
         <div class="card">
@@ -80,15 +87,34 @@
 
   <footer>
     <div>
-      <a href="#">About Us</a> |
-      <a href="#">Contact</a> |
-      <a href="#">Privacy Policy</a> |
-      <a href="#">Terms of Service</a>
+      <a href="#">Terms of Service</a> |
+      <a href="#">Privacy Policy</a>
     </div>
     <div class="copyright">
       © 2025 HeartLift. All rights reserved.
     </div>
   </footer>
+  <!-- AI Friend Chatbot Modal -->
+<div id="chatModal" class="chat-modal">
+  <div class="chat-modal-content">
+    <span id="closeChat" class="close">&times;</span>
+    <h2 class="chat-title">AI Friend <span class="edit-pencil">✏️</span></h2>
+    <div class="chat-tabs">
+      <button class="chat-tab active" data-mode="bestFriend">Best Friend</button>
+      <button class="chat-tab" data-mode="savageSister">Savage Sister</button>
+      <button class="chat-tab" data-mode="motivationGuru">Motivation Guru</button>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="chatInput" autocomplete="off" placeholder="Type your message..." required>
+      <button type="submit" class="chat-send-btn">&#8594;</button>
+    </form>
+    <div class="chat-suggestions">
+      Suggestions: "<span class="suggestion">I miss them</span>", "<span class="suggestion">I feel lost</span>", "<span class="suggestion">How do I move on?</span>"
+    </div>
+  </div>
+</div>
+
 
   <script src="script.js"></script>
 </body>

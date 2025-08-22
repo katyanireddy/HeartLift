@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Account Settings - HeartLift</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">HeartLift</div>
+    <nav>
+      <a href="index.html">HOME</a>
+        <a href="#">LOGOUT</a>
+      <a href="profile.html">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="nav-avatar" alt="Profile" />
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="profile-card">
+      <h2 class="profile-title">Account Settings</h2>
+      <div class="profile-header">
+        <div class="profile-info">
+          <div class="profile-name">Olivia Bennett</div>
+          <div class="profile-email">olivia.bennett@gmail.com</div>
+        </div>
+      </div>
+      <form class="profile-form">
+        <h3 class="profile-section">Profile Information</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" value="Olivia Bennett" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" value="olivia.bennett@gmail.com" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Your phone number" />
+
+        <label for="bio">Bio</label>
+        <input type="text" id="bio" placeholder="A short bio about you" />
+
+        <div class="profile-actions-row">
+          <input type="file" id="uploadPic" hidden />
+          <button type="button" class="profile-btn outline" onclick="document.getElementById('uploadPic').click()">Upload Profile Picture</button>
+          <button type="button" class="profile-btn">Update Profile</button>
+        </div>
+
+        <h3 class="profile-section">Username</h3>
+        <label for="username">Public Username</label>
+        <input type="text" id="username" placeholder="Choose a username" />
+        <div class="profile-actions-row">
+          <button type="button" class="profile-btn">Create Username</button>
+        </div>
+
+        <h3 class="profile-section">Anonymous Username</h3>
+        <label for="username">Anonymous Username</label>
+        <input type="text" id="username" placeholder="Choose a anonymous username" />
+        <div class="profile-actions-row">
+          <button type="button" class="profile-btn">Generate Anonymous Username</button>
+        </div>
+      </form>
+
+      <div class="profile-meta">
+        <div class="profile-meta-row">
+          <h3 class="profile-subsection">Achievements</h3>
+          <div>
+            Daily Plan Streak <span class="meta-value">7 Days</span>
+          </div>
+          <div>
+            Community Contributor Badge <span class="meta-value">&#x1F5A5;</span>
+          </div>
+        </div>
+        <div class="profile-meta-row">
+          <h3 class="profile-subsection">Security</h3>
+          <div>
+            Change Password <button class="meta-btn">Change</button>
+          </div>
+        </div>
+        <div class="profile-meta-row">
+          <h3 class="profile-subsection">Notifications</h3>
+          <div>
+            App Notifications 
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="profile-meta-row">
+          <h3 class="profile-subsection">Activity History</h3>
+          <div>
+            View Activity <button class="meta-btn">View</button>
+          </div>
+        </div>
+        <div class="profile-meta-row">
+          <h3 class="profile-subsection">Account Management</h3>
+          <div>
+            Delete Account <button class="meta-btn danger">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="#">Terms of Service</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+      © 2025 HeartLift. All rights reserved.
+    </div>
+  </footer>
+  <script src="profile.js"></script>
+</body>
+</html>

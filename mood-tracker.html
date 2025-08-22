@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mood Tracker - HeartLift</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">HeartLift</div>
+    <nav>
+      <a class="cta" href="#">DIVE IN</a>
+      <a class="cta" href="index.html">HOME</a>
+    </nav>
+  </header>
+  <main>
+    <section class="mood-tracker-card">
+      <h2>Mood Tracker</h2>
+      <p class="mt-subtitle">Track your daily moods and reflect on your emotional journey.</p>
+      <div class="mt-calendar">
+        <div class="mt-calendar-controls">
+          <button id="prevMonth" class="mt-month-btn">&lt;</button>
+          <span id="mtMonthLabel">July 2024</span>
+          <button id="nextMonth" class="mt-month-btn">&gt;</button>
+        </div>
+        <div id="calendarGrid" class="mt-calendar-grid"></div>
+      </div>
+      <div class="mt-summary">
+        <h3>Mood Summary</h3>
+        <div class="mt-summary-card">
+          <div class="mt-summary-title">Mood Trends</div>
+          <div class="mt-summary-avg">
+            <span class="mt-avg-label">Average Mood:</span>
+            <span class="mt-avg-num" id="mtAvgMood">3.5</span>
+          </div>
+          <div class="mt-summary-change">Last 30 Days <span class="positive">+5%</span></div>
+          <canvas id="moodChart" height="65"></canvas>
+        </div>
+      </div>
+      <div class="mt-journal">
+        <h3>Journal Entries</h3>
+        <div id="journalEntries" class="mt-journal-box">
+          <div class="mt-journal-empty">
+            No entries yet<br>
+            <span style="font-size:0.98rem;">Start logging your moods and adding journal entries to track your progress.</span>
+            <br>
+            <button id="addEntryBtn" class="mt-add-btn">Add Entry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="#">Terms of Service</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+      © 2025 HeartLift. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="mood-tracker.js"></script>
+</body>
+</html>
