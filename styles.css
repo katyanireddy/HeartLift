@@ -1231,3 +1231,114 @@ footer .copyright {
     padding: 17px 7vw;
   }
 }
+  /*about */
+  .about-card {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 44px auto 60px;
+  padding: 38px 38px 40px 38px;
+  box-shadow: 0 2px 14px #e2dbfa60, 0 1.5px 7px #d1c0f421;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #221d3a;
+  margin-bottom: 18px;
+}
+
+.about-desc {
+  font-size: 1.11em;
+  color: #4b4363;
+  margin-bottom: 34px;
+}
+
+.about-section {
+  margin-top: 32px;
+  font-size: 1.18em;
+  color: #6e5bb5;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.about-values {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.about-value-card {
+  background: #f9f6fd;
+  border-radius: 11px;
+  flex: 1 1 220px;
+  padding: 18px 16px 14px 16px;
+  min-width: 210px;
+  border: 1.3px solid #e3dbfa;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px #f2f0f7;
+}
+
+.about-value-title {
+  font-weight: 700;
+  font-size: 1.07em;
+  color: #b397fa;
+  margin-bottom: 7px;
+}
+
+.about-value-desc {
+  font-size: 0.98em;
+  color: #44405a;
+}
+
+.about-team {
+  display: flex;
+  gap: 26px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.team-member-card {
+  background: #fdebe4;
+  border-radius: 18px;
+  width: 180px;
+  padding: 24px 11px 15px 11px;
+  box-shadow: 0 2px 7px #f5dad6;
+  text-align: center;
+}
+
+.team-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.team-member-name {
+  font-weight: 700;
+  color: #221d3a;
+  margin-bottom: 4px;
+  font-size: 1.07em;
+}
+
+.team-member-role {
+  font-size: 0.99em;
+  color: #75636a;
+}
+
+@media (max-width: 900px) {
+  .about-card {
+    max-width: 99vw;
+    padding: 18px 6vw 25px 6vw;
+  }
+  .about-values, .about-team {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+}
