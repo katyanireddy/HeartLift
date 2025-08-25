@@ -240,3 +240,6 @@ if(addEntryBtn && journalEntries){
     <br><button class="mt-add-btn" style="margin-top:12px;">Save</button></div>`;
   };
 }
+document.getElementById('dailyHealingCard').addEventListener('click', function() {
+  window.location.href = 'daily-healing.html';
+});

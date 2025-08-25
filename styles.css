@@ -52,7 +52,7 @@ nav a.cta.outline {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+  background: url('/Users/katyanireddy/Downloads/mainpic.jpg.avif') center/cover no-repeat;
   border-radius: 12px;
   margin: 40px auto 0;
   max-width: 800px;
@@ -1340,5 +1340,183 @@ footer .copyright {
     flex-direction: column;
     gap: 12px;
     align-items: stretch;
+  }
+}
+
+/*  daily healing  */
+.daily-healing-card {
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.daily-healing-card:hover {
+  box-shadow: 0 4px 18px #cdc1ff60;
+}
+.healing-form-card {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 640px;
+  margin: 44px auto 0;
+  padding: 35px 38px 30px 38px;
+  box-shadow: 0 2px 14px #e2dbfa50, 0 1.5px 7px #d1c0f421;
+  display: flex;
+  gap: 48px;
+}
+
+.healing-form-left {
+  flex: 2;
+}
+.healing-form-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.healing-form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+.healing-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.healing-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #56567a;
+  font-weight: 500;
+}
+.healing-form input,
+.healing-form select,
+.healing-form textarea {
+  padding: 11px 13px;
+  border-radius: 8px;
+  border: 1.5px solid #f0e2ed;
+  background: #f7f6fa;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #222;
+  transition: border 0.18s;
+}
+
+.healing-form input:focus,
+.healing-form select:focus,
+.healing-form textarea:focus {
+  border: 1.5px solid #b397fa;
+  outline: none;
+}
+
+.healing-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.healing-form .healing-submit-btn {
+  background: #ff2477;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 0;
+  font-size: 1.07rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.18s;
+}
+.healing-form .healing-submit-btn:hover {
+  background: #b397fa;
+}
+
+.healing-form-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 9px;
+  background: #f9f6fa;
+}
+
+.healing-plan-card {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 780px;
+  margin: 44px auto 44px auto;
+  padding: 35px 38px 35px 38px;
+  box-shadow: 0 2px 14px #e2dbfa50, 0 1.5px 7px #d1c0f421;
+}
+
+.healing-plan-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+
+.healing-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.healing-plan-entry {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 2px;
+}
+
+.healing-plan-texts {
+  flex: 1;
+}
+
+.healing-plan-day {
+  font-size: 1.08em;
+  font-weight: 700;
+  color: #b397fa;
+  margin-bottom: 6px;
+}
+
+.healing-plan-step-title {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 3px;
+  color: #ff2477;
+}
+
+.healing-plan-step-desc {
+  font-size: 0.98em;
+  color: #444;
+}
+
+.healing-plan-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  object-fit: cover;
+  background: #fdebe4;
+  box-shadow: 0 1.5px 6px #faeee7;
+}
+
+.healing-plan-quote {
+  text-align: right;
+  margin-top: 40px;
+  color: #868696;
+  font-size: 1.07em;
+}
+
+@media (max-width: 700px) {
+  .healing-form-card, .healing-plan-card {
+    max-width: 99vw;
+    padding: 18px 7vw 20px 7vw;
+    gap: 18px;
+  }
+  .healing-form-img {
+    width: 98px; height: 98px;
+  }
+  .healing-plan-img {
+    width: 50px; height: 50px;
   }
 }
