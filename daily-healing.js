@@ -59,9 +59,11 @@ function renderForm() {
         <form id="healingForm" class="healing-form">
           <label for="yourname">Your Name</label>
           <input type="text" id="yourname" name="yourname" required>
+          <br><br>
 
           <label for="yourage">Your Age</label>
           <input type="number" id="yourage" name="yourage" required min="10" max="99">
+          <br><br>
 
           <label for="focus">Focus Areas</label>
           <select id="focus" name="focus" required>
@@ -71,6 +73,7 @@ function renderForm() {
             <option value="Restoring Confidence">Restoring Confidence</option>
             <option value="Mindfulness">Mindfulness</option>
           </select>
+          <br><br>
 
           <label for="duration">Duration</label>
           <select id="duration" name="duration" required>
@@ -79,9 +82,12 @@ function renderForm() {
             <option value="2 weeks">2 weeks</option>
             <option value="30 days">30 days</option>
           </select>
+          <br><br>
+
 
           <label for="goals">Your Goals</label>
           <textarea id="goals" name="goals" placeholder="Write your goals for healing..." required></textarea>
+          <br><br>
 
           <button type="submit" class="healing-submit-btn">Submit</button>
         </form>

@@ -1418,8 +1418,8 @@ footer .copyright {
 .healing-form .healing-submit-btn {
   background: #ff2477;
   color: #fff;
-  border: none;
-  border-radius: 7px;
+  border: 2px;
+  border-radius: 10px;
   padding: 13px 0;
   font-size: 1.07rem;
   font-weight: 600;
